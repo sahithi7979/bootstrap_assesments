@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">CarrerX Club</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="navlogin.html">Login</a></li>
+          <li><a href="nav.html">Registration</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Courses
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+  </nav>
+  <div>
+  <h1 class="text-success  p-5">Login Form</h1>
+  <form  onsubmit="return validate()" method="post" class="p-3 w-50 bg-info">
+
+    <label for="name">UserName</label>
+    <input type="text" id="name" name="name" class="form-control m-2 " placeholder="Your username.."/>
+
+    <label for="pwd">Password</label>
+    <input type="password" id="pwd" name="pwd" class="form-control m-2" placeholder="Your password.."/>
+
+    <input type="button" id="button" name="button" class="form-control bg-danger"  value="register">
+</div>
+  </body>
+</html>
